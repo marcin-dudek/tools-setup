@@ -2,7 +2,7 @@ Set-Location 'D:\source'
 
 # --------- Import and setup posh git
 Import-Module posh-git
-$color = 'Green'
+$color = '0x00a600'
 
 $GitPromptSettings.DefaultPromptPath.ForegroundColor = $color
 $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n$($Env:Username)'
