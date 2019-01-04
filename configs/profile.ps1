@@ -1,5 +1,3 @@
-Set-Location 'D:\source'
-
 # --------- Import and setup posh git
 Import-Module posh-git
 $color = '0x00a600'
