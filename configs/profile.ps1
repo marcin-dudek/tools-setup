@@ -1,4 +1,4 @@
-# --------- Import and setup posh git
+# ------------------ Import and setup posh git ------------------
 Import-Module posh-git
 $color = '0x00a600'
 
@@ -6,7 +6,10 @@ $GitPromptSettings.DefaultPromptPath.ForegroundColor = $color
 $GitPromptSettings.DefaultPromptBeforeSuffix.Text = '`n$($Env:Username)'
 $GitPromptSettings.DefaultPromptBeforeSuffix.ForegroundColor = $color
 
-# --------- Show logo
+# ------------------ Set encoding -------------------------------
+$OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+
+# ------------------ Show logo in center of the console ---------
 $logo = @"
                         ''~``
                         ( o o )
