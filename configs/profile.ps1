@@ -32,7 +32,7 @@ function Write-HostCenter {
     }
 
     $leftPad = ([Math]::Max(0, $Host.UI.RawUI.BufferSize.Width / 2) - [Math]::Floor($maxLength / 2))
-    $left = ' ' * $leftPad
+    $left = (' ' * $leftPad)
     foreach ($a in $lines) {
         Write-Host ("{0}{1}" -f $left, $a) -ForegroundColor $color
     }
