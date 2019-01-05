@@ -5,3 +5,6 @@ git config --global alias.cd "checkout develop"
 
 # ------------------ Install posh git -----------------
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force
+
+# ------------------ Install fuck ---------------------
+iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattparkes/PoShFuck/master/Install-TheFucker.ps1'))
